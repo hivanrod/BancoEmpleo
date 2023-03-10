@@ -8,5 +8,7 @@ namespace ClassLibraryBancoEmpleo.Models
 {
     public class Cargo
     {
+        public string Id { get; set; }  
+        public string Descripcion { get; set; }
     }
 }

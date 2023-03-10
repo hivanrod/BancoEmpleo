@@ -8,5 +8,10 @@ namespace ClassLibraryBancoEmpleo.Models
 {
     public class EmpleoxEmpleado
     {
+        public int IdEmpleo { get; set; }
+        public int IdEmpleado { get; set; }
+        public DateTime FechaHoraInicio { get; set; }
+        public DateTime FechaHoraFin { get; set; }
+        public string Notas { get; set; }
     }
 }

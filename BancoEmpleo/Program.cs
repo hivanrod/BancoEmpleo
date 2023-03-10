@@ -1,4 +1,5 @@
 using BancoEmpleo.Data;
+using BancoEmpleo.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
@@ -8,6 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddSingleton<EmpleoServices>();
+builder.Services.AddSingleton<EmpleadoServices>();
+builder.Services.AddSingleton<EmpleadorServices>();
 
 var app = builder.Build();
 
